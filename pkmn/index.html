@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha Pokémon Gen 1 - Player vs Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="game-container">
+        <div id="battle-area">
+            <div class="player-section" id="player2-section">
+                <div class="info-container">
+                    <div class="pokemon-name" id="p2-pokemon-name"></div>
+                    <div class="hp-bar-container">
+                        <span>HP:</span>
+                        <div class="hp-bar-outer">
+                            <div class="hp-bar-inner" id="p2-hp-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pokemon-sprite">
+                    <img id="p2-sprite" src="" alt="Sprite do Pokémon do Jogador 2">
+                </div>
+            </div>
+
+            <div class="player-section" id="player1-section">
+                <div class="pokemon-sprite">
+                    <img id="p1-sprite" src="" alt="Sprite do Pokémon do Jogador 1">
+                </div>
+                <div class="info-container">
+                    <div class="pokemon-name" id="p1-pokemon-name"></div>
+                    <div class="hp-bar-container">
+                        <span>HP:</span>
+                        <div class="hp-bar-outer">
+                            <div class="hp-bar-inner" id="p1-hp-bar"></div>
+                        </div>
+                    </div>
+                    <div class="hp-value" id="p1-hp-value"></div>
+                </div>
+            </div>
+        </div>
+        <div id="control-panel">
+            <div id="battle-log" class="log-box">A batalha vai começar!</div>
+            <div id="moves-box" class="moves-container">
+                </div>
+            <div id="team-selection-box" class="team-container">
+                 </div>
+        </div>
+    </div>
+
+    <div id="start-screen">
+        <h1>Batalha Pokémon</h1>
+        <p>Geração 1 - Player vs Player</p>
+        <button id="start-button">Iniciar Jogo</button>
+    </div>
+
+    <div id="game-over-screen" class="hidden">
+        <h2 id="winner-message"></h2>
+        <button id="restart-button">Jogar Novamente</button>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
